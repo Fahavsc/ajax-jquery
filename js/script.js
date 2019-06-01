@@ -1,11 +1,12 @@
 $(document).ready(
     function(){
         console.log("Pagina Carregada");
-        var cep = $("#txtCEP").val();
-        cep = cep.replace("-", "");
-        var urlStr = "https://viacep.com.br/ws/"+ cep +"/json/";
+       
 
             $("#txtCEP").focusout(function(){
+ 	    var cep = $("#txtCEP").val();
+            cep = cep.replace("-", "");
+            var urlStr = "https://viacep.com.br/ws/"+ cep +"/json/";
             $.ajax({
                 url : urlStr ,
                 type: "get",
