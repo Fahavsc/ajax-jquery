@@ -4,19 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Document</title>
 </head>
 <body>
     <div>
-        <p>Informe o cep</p>
+        <h1>Informe o cep</h1>
+    </div>
+    <div class="form-group">
         <table>
-            <tr> <td>CEP:</td> <td><input type="text" id="txtCEP"></td> </tr>
-            <tr><td>Logradouro:</td> <td><input type="text" id="txtLog"> </td></tr>
-            <tr><td>Estado: </td><td><input type="text" id="txtEs"> </td></tr>
-            <tr><td>Bairro:</td> <td><input type="text" id="txtBairro"> </td></tr>
-            <tr><td>Rua:</td> <td><input type="text" id="txtRua"> </td></tr>
-            <tr><td>Complemento: </td><td><input type="text" id="txtComp"> </td></tr>
-            <tr><td><button type="submit" id="btnBuscar" value="buscar">Clique</button></td></tr>
+            <tr> <td>CEP:</td> <td><input type="text" id="txtCEP" class="form-control"></td> </tr>
+            <tr><td>Estado: </td><td><input type="text" id="txtEs" class="form-control"> </td></tr>
+            <tr><td>Bairro:</td> <td><input type="text" id="txtBairro" class="form-control"> </td></tr>
+            <tr><td>Rua:</td> <td><input type="text" id="txtRua" class="form-control"> </td></tr>
+            <tr><td>Complemento: </td><td><input type="text" id="txtComp" class="form-control"> </td></tr>
+            <tr><td><button type="submit" id="btnBuscar" class="btn btn-primary btn-lg">Clique</button></td></tr>
         </table>
     </div>
     <script src="js/jquery-3.4.1.min.js"></script>

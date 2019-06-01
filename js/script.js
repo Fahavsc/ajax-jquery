@@ -3,7 +3,7 @@ $(document).ready(
         console.log("Pagina Carregada");
        
 
-            $("#txtCEP").focusout(function(){
+            $("#btnBuscar").click(function(){
  	    var cep = $("#txtCEP").val();
             cep = cep.replace("-", "");
             var urlStr = "https://viacep.com.br/ws/"+ cep +"/json/";
